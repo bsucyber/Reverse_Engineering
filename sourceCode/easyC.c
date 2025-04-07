@@ -19,7 +19,7 @@ int main(){
             combinedAscii += currentAscii;
             length++;
         }
-        if(length == 4 && combinedAscii == 600){
+        if(length >= 5 && combinedAscii == 600){
             printf("Great job! You figured it out! \n");
             keepGoing = 0;
         }
