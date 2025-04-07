@@ -30,4 +30,5 @@ int main(){
             printf("Wrong password! I'm gonna rub some dirt in your eyes. \n");
         }
     }
+    return 0;
 }
