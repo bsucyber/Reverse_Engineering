@@ -1,25 +1,18 @@
 #include <stdio.h>
+#include <string.h>
 
 int main(){
     char userGuess[20];
-    int currentAscii;
-    int combinedAscii;
-
+    int password;
 
     int keepGoing = 1;
     while(keepGoing != 0){
-        combinedAscii = 0;
-        int length = 0;
-
+        char password[] = "aidenthegreat";
+        
         printf("Enter the password: ");
         scanf("%s", userGuess);
 
-        for(int i = 0; userGuess[i] != '\0'; i++){
-            currentAscii = userGuess[i];
-            combinedAscii += currentAscii;
-            length++;
-        }
-        if(length >= 5 && combinedAscii == 600){
+        if(strcmp(userGuess,password) == 0){
             printf("Great job! You figured it out! \n");
             keepGoing = 0;
         }
